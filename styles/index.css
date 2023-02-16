@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    cursor: url(../public/Cursor2.cur), default;
+}
+
+body{
+    margin: 0;
+    background-color:  #131313;
+}
+
+.navbar{
+    display: flex; /* cede display flex pra todas div filhas */
+    flex-flow: row wrap;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    justify-content: center; /* alinhar horizontalmente */
+    align-items: center; /* alinhar verticalmente */
+}
+
+.logo{
+    margin-left: 11%;
+    flex:20%;
+    /* border: 1px solid red; */
+    text-align: left; /* alinhar o texto no centro da div */
+    margin-top: -2.8vh;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 36px;
+}
+
+h1:hover{
+    color: yellow;
+}
+
+.menu{
+    flex:60%;
+    /* border: 1px solid green; */
+    text-align: right;
+    padding: 20px;
+    font-family: 'Roboto Mono', sans-serif;
+    margin-right: 10%;
+    margin-top: -13.2vh;
+}
+
+a{
+    color: white;
+    text-decoration: none; /* retira sublinhado */
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+a:hover{
+    color: red;
+    border-top: 4px solid white;
+}
+
+#call{
+    background: rgb(255, 255, 255);
+    color: red;
+    padding: 15px 15px;
+    border-radius: 20px;
+    margin-left: 4%;
+    font-weight: bold;
+}
+
+#call:hover{
+    background-color: red;
+    color: white;
+    transition: 0.1s linear;
+}
+
+header{
+    display: flex;
+    margin-right: 10%;
+    /* border: solid green; */
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.textos{
+    flex: 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+.imgheader{
+    width: 900px;
+    flex:60%;
+}
+
+h3{
+    font-weight: lighter;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+h2{
+    font-weight: bolder;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    padding: 20px;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Buy-btn{
+    background-color: red;
+    color: white;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Buy-btn:hover{
+    background-color: yellow;
+    color: #131313;
+    transition: 0.1s linear;
+    border-top: 4px solid white;
+}
+
+section{
+    margin-top: 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h4{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 26.66%;
+    padding: 20px;
+    margin:1%;
+    border: 1px solid rgb(128, 0, 0); 
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 20%;
+}
+
+.text-oculto{
+    display: none;
+}
+
+.cards:hover{
+    background-color: red;
+    color: white;
+    padding: 40px;
+
+}
+
+.cards:hover .card-text{
+    display: none;
+    
+}
+
+.cards:hover .text-oculto{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-oculto{
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin-top: 80px;
+    height: 300px;
+    background-image: linear-gradient(180deg, #0f0f0f,#080808, black  );
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* alinhar horizontalmente */
+    align-items: center;
+    border-top: 2px solid  red;
+}
+
+.logo-rodape{
+    margin-left: 11%;
+    /* border: 1px solid purple; */
+    flex:50%;
+    font-size: 90px;
+    padding: 80px;
+}
+
+.text-rodape{
+    color: white;
+    /* border: 1px solid green; */
+    margin-right: 11%;
+    flex:28%;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 80px;
+}
+
+.whats{
+    width: 100px;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+
+}
